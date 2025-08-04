@@ -98,7 +98,7 @@
     function checkWin() {
       const winState = [...Array(8).keys()].map(x => x + 1).concat([null]);
       const won = tiles.every((val, idx) => val === winState[idx]);
-      message.textContent = won ? "عند لون فريقك QR code اذهب الى المكان اللي لعبنا عنده بالمياه و دور على  " : "";
+      message.textContent = won ? "بلون فريقك QR code اذهب الى المكان اللي لعبنا عنده بالمياه و دور على  " : "";
     }
 
     shuffle(tiles);
@@ -106,6 +106,7 @@
   </script>
 </body>
 </html>
+
 
 
 
